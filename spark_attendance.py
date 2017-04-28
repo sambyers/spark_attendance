@@ -85,7 +85,7 @@ def index():
                 spark_api.messages.create(roomId=room_id, text="You can use Spark Attendance with the following commands:\n    \"here\" to check in.\n    \"list\" to list the users that have checked in.\n \"export\" will attach a csv file to the room with the users currently checked in.\n \"clear\" will clear out the users checked in.")
 
         elif 'list all' in spark_msg.text:
-            if person_email == 'sabyers@cisco.com':
+            if person_email == 'someone@somedomain.com': # restricting commands to just a particular person
                 users_in_room = User.query.all()
                 users_in_room_str = "\n".join(str(x.email) for x in users_in_room)
                 if users_in_room_str:

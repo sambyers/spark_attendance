@@ -1,0 +1,15 @@
+ciscosparkapi
+click
+Flask
+future
+gunicorn
+itsdangerous
+Jinja2
+MarkupSafe
+requests
+requests-toolbelt
+six
+virtualenv
+Werkzeug
+flask-sqlalchemy
+psycopg2
